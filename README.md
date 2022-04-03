@@ -18,4 +18,4 @@ Before training, we move five images per class in the training dataset, and make
 | Model | Accuracy |
 | :---: | :---: |
 | Smallest | 78.22 | 
-| Largest |  | 
+| Largest | 82.80 | 

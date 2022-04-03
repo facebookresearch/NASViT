@@ -15,7 +15,7 @@ _C.DATA = CN()
 # Batch size for a single GPU, could be overwritten by command line argument
 _C.DATA.BATCH_SIZE = 128
 # Path to dataset, could be overwritten by command line argument
-_C.DATA.DATA_PATH = '/scratch/cluster/dilin/datasets/imagenet'
+_C.DATA.DATA_PATH = './datasets/imagenet'
 # Dataset name
 _C.DATA.DATASET = 'imagenet'
 # Input image size
@@ -40,11 +40,11 @@ _C.DATA.PREFETCH_FACTOR = 4 # 12
 # -----------------------------------------------------------------------------
 _C.MODEL = CN()
 # Model type
-_C.MODEL.TYPE = 'swin'
+_C.MODEL.TYPE = 'vit'
 # Model name
-_C.MODEL.NAME = 'swin_tiny_patch4_window7_224'
+_C.MODEL.NAME = 'vit'
 # Checkpoint to resume, could be overwritten by command line argument
-_C.MODEL.RESUME = '/scratch/cluster/cygong/ckpt_360.pth'
+_C.MODEL.RESUME = 'ckpt_360.pth'
 # Number of classes, overwritten in data preparation
 _C.MODEL.NUM_CLASSES = 1000
 # Dropout rate
